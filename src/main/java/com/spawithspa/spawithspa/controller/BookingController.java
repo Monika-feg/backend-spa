@@ -30,6 +30,7 @@ public class BookingController {
     }
 
     @PostMapping("/bookings")
+    @CrossOrigin(origins = "*")
     public Booking createBooking(@RequestBody Booking booking) {
         return bookingService.createBooking(booking);
     }
