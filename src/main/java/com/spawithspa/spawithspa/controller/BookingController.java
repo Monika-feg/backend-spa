@@ -12,7 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.spawithspa.spawithspa.model.Booking;
 import com.spawithspa.spawithspa.service.BookingService;
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://starfish-app-2pnrq.ondigitalocean.app")
+
 @RestController
 @RequestMapping("/api")
 public class BookingController {
@@ -30,7 +31,6 @@ public class BookingController {
     }
 
     @PostMapping("/bookings")
-    @CrossOrigin(origins = "*")
     public Booking createBooking(@RequestBody Booking booking) {
         return bookingService.createBooking(booking);
     }
