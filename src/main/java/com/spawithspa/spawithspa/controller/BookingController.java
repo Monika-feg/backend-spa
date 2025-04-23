@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.spawithspa.spawithspa.model.Booking;
 import com.spawithspa.spawithspa.service.BookingService;
 
-@CrossOrigin(origins = "octopus-app-giusr.ondigitalocean.app")
+@CrossOrigin(origins = "https://octopus-app-giusr.ondigitalocean.app")
 @RestController
 @RequestMapping("/api")
 public class BookingController {
