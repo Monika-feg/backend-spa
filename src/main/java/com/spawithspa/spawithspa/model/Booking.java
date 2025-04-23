@@ -11,11 +11,11 @@ public class Booking {
     private String id;
     private String date;
     private String timeSlot;
-    private String customerName; // Fixed typo
-    private Integer amountOfPeople; // New field
-    private Integer amountOfChildren; // New field
-    private Double price; // New field
-    private String treatmentType; // New field (e.g., "temadag")
+    private String customerName;
+    private Integer amountOfPeople;
+    private Integer amountOfChildren;
+    private Double price;
+    private String treatmentType;
 
     @DocumentReference
     private Preson preson;
